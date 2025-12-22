@@ -54,6 +54,7 @@ body {
     opacity: 1;
     filter: blur(0);
     transition: .7s ease;
+    transition-delay: calc(.1s * var(--));
 }
 
 .wrapper.active .form-box.login .animation {
@@ -67,6 +68,10 @@ body {
     right: 0;
     padding: 0 40px 0 60px;
     /* display: none; */
+    pointer-events: none;
+}
+.wrapper.active .form-box.register {
+    pointer-events: auto;
 }
 
 .wrapper .form-box.register .animation {
@@ -227,13 +232,13 @@ body {
     opacity: 1;
     filter: blur(0);
     transition: .7s ease;
+    transition-delay: calc(.1s * var(--));
 }
 
 .wrapper.active .info-text.login .animation {
     transform: translateX(120%);
     opacity: 0;
     filter: blur(10px);
-
     transition-delay: calc(.1s * var(--i));
 }
 
@@ -243,7 +248,9 @@ body {
     padding: 0 150px 60px 40px;
     pointer-events: none;
     /* display: none; */
-
+}
+.wrapper.active .info-text.register{
+    pointer-events: auto;
 }
 
 .wrapper .info-text.register .animation {
