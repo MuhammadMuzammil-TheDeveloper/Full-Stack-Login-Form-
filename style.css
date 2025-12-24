@@ -24,8 +24,9 @@ body {
 
 .wrapper {
     position: relative;
-    width: 750px;
-    height: 450px;
+    width: 90%;
+    max-width: 750px;
+    min-height: 450px;
     background: transparent;
     border: 2px solid var(--border-color);
     box-shadow: 0 0 25px var(--border-color);
@@ -318,4 +319,82 @@ body {
     transform: rotate(-11deg) skewY(-41deg);
     transition-delay: 1.2s;
 
+}
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .wrapper {
+        height: auto;
+        min-height: 600px;
+    }
+
+    /* Hide info text on mobile */
+    .wrapper .info-text {
+        display: none;
+    }
+
+    /* Full width form */
+    .wrapper .form-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+    }
+
+    .wrapper .form-box.login,
+    .wrapper .form-box.register {
+        left: 0;
+        right: 0;
+    }
+
+    /* Disable sliding animation */
+    .wrapper .form-box .animation {
+        transform: none !important;
+        opacity: 1 !important;
+        filter: none !important;
+    }
+
+    /* Background animation hidden */
+    .wrapper .bg-animate,
+    .wrapper .bg-animate2 {
+        display: none;
+    }
+
+    .form-box h2 {
+        font-size: 26px;
+    }
+
+    .info-text h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        height: 42px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+
+    .form-box {
+        padding: 30px 20px;
+    }
+
+    .form-box h2 {
+        font-size: 22px;
+    }
+
+    .input-box {
+        margin: 18px 0;
+    }
+
+    .logreg-link {
+        font-size: 13px;
+    }
 }
