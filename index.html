@@ -4,12 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login / SignUp </title>
+    <title>Login & SignUp Form | Full Stack Firebase Form by Muhammad Muzammil</title>
+    <meta name="description" content="Create your account or login using this full-stack Login Signup form with Firebase integration. Developed by Muhammad Muzammil.">
+    <meta name="keywords" content="Muhammad Muzammil, Login Form, SignUp Form, Full Stack Form, Firebase Form, Web Development, Registration Form, Authentication, HTML CSS JS">
+    <meta name="author" content="Muhammad Muzammil">
+    <meta property="og:title" content="Login & SignUp Form by Muhammad Muzammil">
+    <meta property="og:description" content="Secure Login & SignUp form with Firebase integration and full-stack capabilities by Muhammad Muzammil.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-</head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Login & SignUp Form",
+  "url": "https://login-signup-full-stack-form.netlify.app/",
+  "author": {
+    "@type": "Person",
+    "name": "Muhammad Muzammil"
+  },
+  "applicationCategory": "WebApplication",
+  "description": "Full-stack login and signup form integrated with Firebase for secure authentication. Developed by Muhammad Muzammil.",
+  "operatingSystem": "Web",
+  "keywords": "Muhammad Muzammil, Login Form, SignUp Form, Full Stack Form, Firebase Form, Web Development, Authentication",
+  "softwareVersion": "1.0",
+  "datePublished": "2025-12-25",
+  "dateModified": "2025-12-25",
+  "potentialAction": [
+    {
+      "@type": "RegisterAction",
+      "target": "https://login-signup-full-stack-form.netlify.app/#signupForm"
+    },
+    {
+      "@type": "LoginAction",
+      "target": "https://login-signup-full-stack-form.netlify.app/#loginForm"
+    }
+  ]
+}
+</script>
+
+   </head>
 
 <body>
     <div class="wrapper">
@@ -55,7 +92,7 @@
                     <i class="fa-regular fa-envelope"></i>
                 </div>
                 <div class="input-box animation" style="--i:20, --j:3">
-                    <input type="password"  id="signupPassword" required>
+                    <input type="password" id="signupPassword" required>
                     <label>Password</label>
                     <i class="fa-solid fa-lock"></i>
                 </div>
@@ -73,12 +110,12 @@
         </div>
     </div>
     <!-- Popup -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span id="closePopup" class="close">&times;</span>
-    <h2 id="popupMessage">Thank you!</h2>
-  </div>
-</div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2 id="popupMessage">Thank you!</h2>
+        </div>
+    </div>
 
     <script type="module" src="app.js"></script>
 </body>
